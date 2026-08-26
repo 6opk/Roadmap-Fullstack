@@ -1,22 +1,60 @@
-<!--- Survey Form --->
-    Certification Survey Form
-    This survey is designed to gather feedback on the certification process. Please answer the following questions honestly and to the best of your ability.
+<!DOCTYPE html> 
+<html lang="en">
 
-    <!--- Questions --->
-    <a href="https://www.surveymonkey.com/r/CertificationSurvey" target="_blank">Click here to take the survey</a>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <a href="https://www.surveymonkey.com/r/CertificationSurvey" target="_blank">
-        <img src="https://www.surveymonkey.com/images/survey-button.png" alt="Take the Survey" />
-    </a>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We value your feedback! Please fill out the form below.</p>
+        
+        <form id="survey-form" method="post">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-    <a href="https://www.surveymonkey.com/r/CertificationSurvey" target="_blank">
-        <button type="button">Take the Survey</button>
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <!--- Survey Button --->
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age">
 
-    </a>
+            <label for="dropdown">Gender:</label>
+            <select id="dropdown" name="gender">
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
 
-    This survey is anonymous, and your responses will be kept confidential. Thank you for your participation!
+            <p>Would you recommend us?</p>
+            <label for="recommend-yes">
+                <input type="radio" id="recommend-yes" name="recommend" value="yes"> Yes
+            </label>
+            <label for="recommend-no">
+                <input type="radio" id="recommend-no" name="recommend" value="no"> No
+            </label>
 
-    End of Survey Form
+            <p>Interests:</p>
+            <label for="interest1">
+                <input type="checkbox" id="interest1" name="interests" value="Technology"> Technology
+            </label>
+            <label for="interest2">
+                <input type="checkbox" id="interest2" name="interests" value="Sports"> Sports
+            </label>
+            <label for="interest3">
+                <input type="checkbox" id="interest3" name="interests" value="Music"> Music
+            </label>
 
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback here..."></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body> 
+</html>
