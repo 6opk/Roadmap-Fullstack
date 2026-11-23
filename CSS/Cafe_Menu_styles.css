@@ -1,15 +1,17 @@
+body {
+    background-image:url(https://cdn.freecodecamp.org/curriculum/css-cafe-menu/beans.jpg);
+    background-size: cover;
+}
+
 h1, h2, p {
     text-align: center;
     font-family: 'Arial', sans-serif;
 }   
 
-#menu-container {
-    /*background-color: burlywood;*/
-    padding: 20px;
-}
-
-#menu-container {
-    width: 300px;
+.menu-container {
+    width: 80%;
     margin: 0 auto;
     background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
 }
