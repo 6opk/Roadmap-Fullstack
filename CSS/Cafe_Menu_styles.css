@@ -3,7 +3,13 @@ h1, h2, p {
     font-family: 'Arial', sans-serif;
 }   
 
-body {
-    background-color: brown;
+#menu-container {
+    /*background-color: burlywood;*/
     padding: 20px;
+}
+
+#menu-container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: burlywood;
 }
