@@ -4,6 +4,19 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.established {
+    text-align: center;
+    font-family: italic, sans-serif;
+}
+
 h1, h2, p {
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -21,7 +34,7 @@ h1, h2, p {
 
 h1, h2 {
     text-align: center;
-    font-family: 'Arial', impact;
+    font-family: impact, serif;
 }
 
 .item p {
